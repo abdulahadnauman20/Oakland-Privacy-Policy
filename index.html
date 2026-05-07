@@ -461,8 +461,11 @@
     </div>
 
     <footer class="footer">
-      &copy; 2026 Oakland Diner. All rights reserved.
+      &copy; <span id="copyright-year"></span> Oakland Diner. All rights reserved.
     </footer>
   </main>
+  <script>
+    document.getElementById("copyright-year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
